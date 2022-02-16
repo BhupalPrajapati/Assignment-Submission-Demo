@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Arithmetic  -->
+    <p id="Addition"></p>
+    <p id="Sub"></p>
+
+    <!-- Assignment -->
+    <p id="de"></p>
+    <p id="in"></p>
+
+    <!-- Comparsion -->
+    <p id="equalTo"></p>
+    <p id="NotEql"></p>
+
+    <!-- Unary -->
+    <p id="Un"></p>
+    <p id="IN"></p>
+    <script>
+
+
+        // Creating varibale to perform the following opertions
+
+        // a) Arithmetic operator
+        // 1) Addition operation
+        var x = 10 + 40;
+        document.getElementById("Addition").innerHTML = x;
+
+        var y = 20 - 6;
+        document.getElementById("Sub").innerHTML = y;
+
+        // 2) 	Subtraction
+
+        var a = 10;
+        a -= 5;
+        document.getElementById("de").innerHTML = a;
+
+        var b = 22;
+        b += 2;
+        document.getElementById("in").innerHTML = b;
+
+        //   c) Comparsion operator 
+
+        // Using Equal opearor
+
+        var c = 5;
+        document.getElementById("equalTo").innerHTML = (c == 8);
+
+        // Using 	not equal
+        var d = 5;
+        document.getElementById("NotEql").innerHTML = (d != 8);
+
+        // D) Identity 
+
+        // 1St Example
+        var valueOne = 3;
+        var valueTwo = "3";
+        if (valueOne === valueTwo) {
+            console.log("ValueOne and ValueTwo are the same");
+        } else {
+            console.log("ValueOne and ValueTwo are NOT the same");
+        }
+
+        // E) Conditional operator 
+
+        // 1st example
+        function getFee(isMember) {
+            return (isMember ? '$2.00' : '$10.00');
+        }
+
+        console.log(getFee(true));
+
+        // 2nd example
+        var age = 26;
+        var beverage = (age >= 21) ? "Beer" : "Juice";
+        console.log(beverage);
+
+        // E) Unary 
+        // 1st example
+        var e = 10;
+        e = e++;
+        document.getElementById("Un").innerHTML = e;
+
+        // 2nd Example
+
+        var f = 10;
+        f = ++f;
+        document.getElementById("IN").innerHTML = f;
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
