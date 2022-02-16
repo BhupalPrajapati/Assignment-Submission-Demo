@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h4>The Percentages of English:
+        <p id="eng"></p>
+    </h4>
+    <h4>The garde of English is :
+        <p id="le"></p>
+    </h4>
+
+    <h4>The Percentages of Math:
+        <p id="math"></p>
+    </h4>
+    <h4>The garde of Math is :
+        <p id="let"></p>
+    </h4>
+
+    <h4>The Percentages of Scienece:
+        <p id="sci"></p>
+    </h4>
+    <h4>The garde of Scienece is :
+        <p id="l"></p>
+    </h4>
+
+    <h4>The Percentages of Health:
+        <p id="health"></p>
+    </h4>
+    <h4>The garde of Health is :
+        <p id="lB"></p>
+    </h4>
+
+    <h4>The Percentages of Social:
+        <p id="social"></p>
+    </h4>
+    <h4>The garde of Social is :
+        <p id="lA"></p>
+    </h4>
+
+
+
+    <script>
+        let eng = 40;
+        let letter;
+        if (eng >= 89) {
+            letter = 'A';
+        }
+        else if (eng >= 80) {
+            letter = 'B';
+        }
+        else if (eng >= 70) {
+            letter = 'C';
+        }
+        else if (eng >= 60) {
+            letter = 'D';
+        }
+        else {
+            letter = 'E'
+        }
+        document.getElementById("eng").innerHTML = eng;
+        document.getElementById("le").innerHTML = letter;
+
+        let math = 64;
+        let lette;
+        if (math >= 89) {
+            lette = 'A';
+        }
+        else if (math >= 80) {
+            lette = 'B';
+        }
+        else if (math >= 70) {
+            lette = 'C';
+        }
+        else if (math >= 60) {
+            lette = 'D';
+        }
+        else {
+            lette = 'E'
+        }
+        document.getElementById("math").innerHTML = math;
+        document.getElementById("let").innerHTML = lette;
+
+        let sci = 78.8;
+        let lett;
+        if (sci >= 89) {
+            lett = 'A';
+        }
+        else if (sci >= 80) {
+            lett = 'B';
+        }
+        else if (sci >= 70) {
+            lett = 'C';
+        }
+        else if (sci >= 60) {
+            lett = 'D';
+        }
+        else {
+            lett = 'E'
+        }
+        document.getElementById("sci").innerHTML = sci;
+        document.getElementById("l").innerHTML = lett;
+
+
+        let he = 89;
+        let le;
+        if (he >= 89) {
+            le = 'A';
+        }
+        else if (he >= 80) {
+            le = 'B';
+        }
+        else if (he >= 70) {
+            le = 'C';
+        }
+        else if (he >= 60) {
+            le = 'D';
+        }
+        else {
+            le = 'E'
+        }
+        document.getElementById("health").innerHTML = he;
+        document.getElementById("lB").innerHTML = le;
+
+        let soc = 89;
+        let l;
+        if (he >= 89) {
+            l = 'A';
+        }
+        else if (he >= 80) {
+            l = 'B';
+        }
+        else if (he >= 70) {
+            l = 'C';
+        }
+        else if (he >= 60) {
+            l = 'D';
+        }
+        else {
+            l = 'E'
+        }
+        document.getElementById("social").innerHTML = soc;
+        document.getElementById("lA").innerHTML = l;
+
+
+    </script>
+</body>
+
+</html>
